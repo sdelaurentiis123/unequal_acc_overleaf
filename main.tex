@@ -1,7 +1,3 @@
-%ZH: please increase the sizes of figure axis labels when they are visible smaller than the main text 
-
-%ZH: Ruggero Valli has just arrived at ISTA -- I'd send him the draft for comments...
-%SOD: Sounds good
 \documentclass[fleqn,usenatbib]{mnras}
 \PassOptionsToPackage{table}{xcolor}
 \usepackage{graphicx} % Required for inserting images
@@ -53,8 +49,6 @@ $^{2}$Institute of Science and Technology Austria (ISTA), Am Campus 1, 3400 Klos
 $^{3}$Department of Physics, Columbia University, 550 W. 120th Street, New York, NY 10027, USA\\
 $^{4}$Center for Cosmology and Particle Physics, Department of Physics, New York University, 726 Broadway, New York, NY 10003, USA\\
 }
-%ZH:  I have no objection,  but is Roman interested in being an author?     If not, there's no need to list him.  Also, did you get comments from Magda?
-%SOD: good point. havent heard from him in a while, so i will take it as a no. hes removed. acknowledged in acknowledgements. and yes magda gave comments on the original version before these summer edits
 
 \title{Preferential accretion onto eccentric and unequal binary black holes}
 
@@ -93,10 +87,7 @@ The protoplanetary-disk community has run two- and three-dimensional smoothed-pa
 
 Despite these efforts we are still yet to fully characterize and understand the rich detail of accretion onto the individual components of a binary in a CBD system. Thus, we build on \Stwentythree and use the larger simulation suite of \citealt{siwek_cbdorbevol} to understand fundamental gas dynamics near BH binaries across different $(q_b, e_b)$, with implications for both their long-term orbital evolution and observational signatures, including light-curves and spectra.
 
-In this study we report the largest binary parameter sweep study on ``preferential accretion'' to date. 
-%ZH: a little unclear to me whether to highlight this... we don't really get much from linear theory
-%SOD: there is a lot of discussion on the eccentricity vector in the literature and motivated the analysis. but if it feels inappropriate can remove
-Further, we characterize the accretion behavior by drawing on linear theory of eccentric circumbinary disks and applying a few targeted numerical techniques: Fourier-based period extraction of the accretion rate ratio, comparison against the individual black hole Eddington threshold, and a coupled gas-plus-gravitational-wave integration of the evolution of the binary mass ratio and eccentricity to study its long-term behavior.
+In this study we report the largest binary parameter sweep study on ``preferential accretion'' to date. Further, we characterize the accretion behavior by drawing on linear theory of eccentric circumbinary disks and applying a few targeted numerical techniques: Fourier-based period extraction of the accretion rate ratio, comparison against the individual black hole Eddington threshold, and a coupled gas-plus-gravitational-wave integration of the evolution of the binary mass ratio and eccentricity to study its long-term behavior.
 
 In \autoref{sec:methods} we briefly discuss the technical details of the simulations, the key concepts from linear theory we draw upon, and the numerical techniques we employ. In \autoref{sec:results} we present our findings, detailing the temporal behavior of preferential accretion and mass-ratio evolution and describing how each varies with $q_b$ and $e_b$. In \autoref{sec:observations} we discuss the consequences of these findings for observations: in particular, jets that periodically switch on and off (``flickering'' jets) and a population of SMBBHs with $q_b \neq 1$. In \autoref{sec:conclusion} we summarize our key findings and discuss next steps.
 
@@ -529,7 +520,6 @@ Because our snapshots are recorded only at apocenter, the time-series $r_1(t)$ a
 \begin{figure*}
     \centering
     \includegraphics[width=1\linewidth]{fourier_panels_fig6.pdf}
-%ZH:  Can you make the right-hand side y-axis labels r_1[a] blue color in the left column?
     \caption{Time-series and power spectra for $(e_b, q_b) = (0.6, 1.0)$ (top row) and $(0.5, 0.8)$ (bottom row), illustrating the period match between $\lambda(t)$ and the cavity-orientation proxy $r_1(t)$. Left column: $\lambda(t)$ (black, left log-axis) and $r_1(t)$ (blue, right axis in units of $a$) over the post-transient window $3000 \le t/\tau_b \le 10000$ ($N=700$ samples at the snapshot cadence of $10\tau_b$). Right column: normalized FFT amplitudes $|\tilde X(f)| / \sum_f |\tilde X(f)|$ as a function of period $\tau = 1/f$; the dotted line marks the $0.05$ amplitude threshold used in \autoref{fig:rmin_lambda_peak_ratio}. Both signals peak cleanly at $\tau \approx 369 \tau_b$ in each simulation (marked by the vertical dashed line), demonstrating that $\lambda(t)$ variability tracks the precessing cavity.}
     \label{fig:fourier_panels}
 \end{figure*}
@@ -622,8 +612,6 @@ where $m_p$ is the proton mass, $\mu_e$ is the mean molecular weight per electro
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{mdot1_mdot2_1edd_both_truncated.pdf}
-%ZH: could expand this figure to full width?
-%SOD: need to 
     \caption{Illustration of Eddington-normalized accretion rates in our simulation suite, with panel backgrounds colored by jet-regime. The panel structure is the same as that of \autoref{fig:lambda_full}, with time on the x-axis of each panel and the individual per-BH accretion rates (in their respective Eddington units) on the y-axis. We display the accretion rate of the primary (black), the secondary (red), and the jet-launching threshold of $1\dot{M}_{\mathrm{Edd}}$ (horizontal dashed gray). Blue background colors indicates a single jet, purple indicates dual-jet regimes, and green indicates flickering jet regimes. At the fiducial $\dot{M}_b = 1.1\,\dot{M}_{\mathrm{Edd}}$ most binaries are single-jet (with the jet launched by the preferentially-accreting  and therefore super-Eddington secondary), while flickering jets are confined to high $e_b$, high $q_b$, and dual-jet cells are rare.}
     \label{fig:mdot_edd}
 \end{figure*}
@@ -658,10 +646,7 @@ While dual jets from BBH systems have been suggested before \citep{Palenzuela_du
 \begin{equation}
     \tilde{\lambda} \equiv \frac{\langle \max (\dot{M}_{1}, \dot{M}_{2}) \rangle }{\langle \min (\dot{M}_{1}, \dot{M}_{2}) \rangle},
 \end{equation}
-the ratio of the maximum and minimum 
-%ZH: I think "Eddington-normalized" is not needed here, since it cancels in the ratio. No?
-%SOD: Yes. fixed.
-accretion rates of the binary components. Combined with an assumed binary accretion rate $\dot{M}_b$, $\tilde{\lambda}$ fixes the per-BH rate via
+the ratio of the maximum and minimum accretion rates of the binary components. Combined with an assumed binary accretion rate $\dot{M}_b$, $\tilde{\lambda}$ fixes the per-BH rate via
 \begin{equation}
     \dot{M}_1 = \frac{\dot{M}_b}{\tilde{\lambda} + 1},
 \end{equation}
@@ -674,7 +659,7 @@ To illustrate the dependence on $\dot{M}_b$, \autoref{fig:mini_jet_regimes} repr
 \begin{figure*}
     \centering
     \includegraphics[width=1\linewidth]{mini_fig8_jet_regimes.pdf}
-    \caption{Reproduction of \autoref{fig:mdot_edd} at two bracketing values of the binary accretion rate that place each BH inside one of the two jet-launching regimes discussed in \S\ref{sec:observations}: a deep-ADAF case $\dot{M}_b = 0.001\,\dot{M}_{\mathrm{Edd}}$ (left, applying the $\dot{M} < 0.01\,\dot{M}_{\mathrm{Edd}}$ ADAF threshold) and a mildly super-Eddington case $\dot{M}_b = 5\,\dot{M}_{\mathrm{Edd}}$ (right, applying the $\dot{M} > 1.1\,\dot{M}_{\mathrm{Edd}}$ thick-disk threshold). Each cell shows the per-Eddington-normalized accretion rates of the primary (black) and secondary (red) on a log y-axis (range shifted per panel to match the data); the dashed gray horizontal marks the $\dot{M}_i = \dot{M}_{\mathrm{Edd},i}$ super-Eddington threshold and the dotted gray horizontal marks the $\dot{M}_i = 0.01\,\dot{M}_{\mathrm{Edd},i}$ ADAF threshold. Backgrounds are colored by jet regime: blue (single-jet, one BH meets its panel's threshold) and purple (dual-jet, both BHs meet their threshold simultaneously sustained). At both extremes dual jets dominate; only single-jet (blue) and dual-jet (purple) cells are realized. The fiducial $\dot{M}_b = 1.1\,\dot{M}_{\mathrm{Edd}}$ shown in \autoref{fig:mdot_edd} represents the radiatively-efficient transition band where the regime mix is richest. Away from the fiducial rate dual jets dominate and flickering disappears; the surviving single jets are launched by the primary in the deep-ADAF (left) panel and by the secondary in the super-Eddington (right) panel.}
+    \caption{Reproduction of \autoref{fig:mdot_edd} at two bracketing values of the binary accretion rate that place each BH inside one of the two jet-launching regimes discussed in \S\ref{sec:observations}: a deep-ADAF case $\dot{M}_b = 0.001\,\dot{M}_{\mathrm{Edd}}$ (left, applying the $\dot{M} < 0.01\,\dot{M}_{\mathrm{Edd}}$ ADAF threshold) and a mildly super-Eddington case $\dot{M}_b = 5\,\dot{M}_{\mathrm{Edd}}$ (right, applying the $\dot{M} > 1.1\,\dot{M}_{\mathrm{Edd}}$ thick-disk threshold). Each cell shows the Eddington-normalized accretion rates of the primary (black) and secondary (red) on a log y-axis (range shifted per panel to match the data); the dashed gray horizontal marks the $\dot{M}_i = \dot{M}_{\mathrm{Edd},i}$ super-Eddington threshold and the dotted gray horizontal marks the $\dot{M}_i = 0.01\,\dot{M}_{\mathrm{Edd},i}$ ADAF threshold. Backgrounds are colored by jet regime: blue (single-jet, one BH meets its panel's threshold) and purple (dual-jet, both BHs meet their threshold simultaneously sustained). At both extremes dual jets dominate; only single-jet (blue) and dual-jet (purple) cells are realized. The fiducial $\dot{M}_b = 1.1\,\dot{M}_{\mathrm{Edd}}$ shown in \autoref{fig:mdot_edd} represents the radiatively-efficient transition band where the regime mix is richest. Away from the fiducial rate dual jets dominate and flickering disappears; the surviving single jets are launched by the primary in the deep-ADAF (left) panel and by the secondary in the super-Eddington (right) panel.}
     \label{fig:mini_jet_regimes}
 \end{figure*}
 
@@ -760,9 +745,8 @@ where $\mathcal{M}=M_bq_b^{3/5}(1+q_b)^{-6/5}$. We identify the crossing through
 \centering
 \includegraphics[width=\textwidth]{Lisa Trajectories 5yr.pdf}
 %ZH: the figure panels cover up the axis labels and tickmarks on the neighboring panels
-\caption{Illustrative evolution of binaries with initial mass 
-%ZH: check the units are all Roman \rm{ }
-$M_{b,0}=10^6\,\mathrm{M}_\odot$, mass ratio $q_{b,0}=0.8$, and eccentricity $e_{b,0}=0.8$ at $z=1$, for $\dot M_b/\dot M_{\mathrm{Edd}}=0.3$ (left) and $1$ (right). Colors denote the initial separation $a_{b,0}$. The upper-panel legends give $a_{b,0}/(10^3R_{\mathrm{S}})$, with $M_{b,\mathrm{LISA}}/M_{b,0}$ in parentheses. The upper and middle rows show $q_b(t)$ and $e_b(t)$, while the lower row shows the trajectory through $(q_b,e_b)$ space on a logarithmic eccentricity axis. Gas and gravitational-wave terms are integrated simultaneously. Open circles mark a source-frame time of $30\,\mathrm{Myr}$ when reached before LISA entry. Stars mark the first upward crossing of the $n=2$ characteristic strain and the \citet{robson2019} characteristic-noise curve. The $30\,\mathrm{Myr}$ marker is diagnostic and is not an imposed gas-supply cutoff. The results suggest that \textit{LISA} can constrain the accretion history of binaries.}
+%ZH2: still looks a bit weird on my screen - the tickmarks are there, but the right-hand side and upper boundaries of each panel (the solid outline of the box) are missing
+\caption{Illustrative evolution of binaries with initial mass $M_{b,0}=10^6\,\mathrm{M}_\odot$, mass ratio $q_{b,0}=0.8$, and eccentricity $e_{b,0}=0.8$ at $z=1$, for $\dot M_b/\dot M_{\mathrm{Edd}}=0.3$ (left) and $1$ (right). Colors denote the initial separation $a_{b,0}$. The upper-panel legends give $a_{b,0}/(10^3R_{\mathrm{S}})$, with $M_{b,\mathrm{LISA}}/M_{b,0}$ in parentheses. The upper and middle rows show $q_b(t)$ and $e_b(t)$, while the lower row shows the trajectory through $(q_b,e_b)$ space on a logarithmic eccentricity axis. Gas and gravitational-wave terms are integrated simultaneously. Open circles mark a source-frame time of $30\,\mathrm{Myr}$ when reached before LISA entry. Stars mark the first upward crossing of the $n=2$ characteristic strain and the \citet{robson2019} characteristic-noise curve. The $30\,\mathrm{Myr}$ marker is diagnostic and is not an imposed gas-supply cutoff. The results suggest that \textit{LISA} can constrain the accretion history of binaries.}
 \label{fig:lisa_qe_trajectories}
 \end{figure*}
 
@@ -782,11 +766,7 @@ This paper has provided the most extensive report to date on preferential accret
     \item Across $q_b$ and $e_b$, $\lambda(t)$ can be split into constant and time-varying regimes (\autoref{tab:stable_varying_grid}), broadly mirroring the split of the CBD into locked and precessing states.
     \item The time-averaged value $\langle \lambda \rangle$ is largest for low-$e_b$, low-$q_b$ binaries and declines toward higher $e_b$ and $q_b$, following the $q_b^{-0.9}$ trend of \Stwentythree at low eccentricity (\autoref{fig:lambda_mean_heatmap}).
     \item $\sigma_{\lambda}$ tracks the cavity eccentricity: both increase with $e_b$ and peak near $e_b = 0.6$ (\autoref{fig:lambda_std_heatmap}, compare \autoref{fig:a_e_cav_heatmap}).
-    \item Across precessing systems in our suite, the CBD apsidal precession period and the $\lambda(t)$ oscillation period are equal. A direct cross-correlation of $\lambda(t)$ with the cavity-wall distance is strong in these precessing $(e_b,q_b)$ parameter combinations (median peak $\approx 0.9$) but occurs at a small non-zero lag rather than at the naively expected $\pi$ phase offset (Appendix~\ref{sec:appendix_crosscorr}).
-%ZH: this should come out as "Appendix" not as Section A
-    Cavity-wall distance therefore paces most of the variability in the precessing regime, while additional physics operates in the locked or irregular $(e_b,q_b)$ parameter combinations.
-%ZH: what does "cell" refer to here??  an (e,q) combination?
-%SOD: yes
+    \item Across precessing systems in our suite, the CBD apsidal precession period and the $\lambda(t)$ oscillation period are equal. A direct cross-correlation of $\lambda(t)$ with the cavity-wall distance is strong in these precessing $(e_b,q_b)$ parameter combinations (median peak $\approx 0.9$) but occurs at a small non-zero lag rather than at the naively expected $\pi$ phase offset (Appendix~\ref{sec:appendix_crosscorr}). Cavity-wall distance therefore paces most of the variability in the precessing regime, while additional physics operates for the locked or irregular $(e_b,q_b)$ parameter combinations.
     \item We do not find evidence that a BH must be closer to the CBD cavity than its companion to accrete at a higher rate.
     \item Normalized to Eddington accretion rates, $\lambda(t)$ results in disparate accretion regimes for each BH in the binary, leading to unique jet-launching regimes. We delineate binaries that are likely to launch a sustained jet from one BH (single-jet), from each BH (dual-jet), or alternate in which BH launches a jet (flickering-jet).
     \item Mass-ratio evolution under gas accretion varies greatly across $q_b$ and $e_b$, and is particularly slow for high-$e_b$ and high-$q_b$ binaries. Namely, by coupling our measured $\langle \dot{q}_b \rangle$ to gas-driven orbital evolution and GW emission, we find that binaries beginning at $q_{b,0}=0.8$ retain $q_{b,\mathrm{LISA}}\simeq0.8$–$0.95$ after a fiducial $30\,\mathrm{Myr}$ episode at $\dot{M}=0.3\dot{M}_{\mathrm{Edd}}$–$1$.
@@ -795,6 +775,8 @@ This paper has provided the most extensive report to date on preferential accret
 
 %ZH: Cite David O'Neill's recent paper(s?) on retrograde binaries, which have different evolution...
 %SOD: DONE BELOW
+%ZH2: I removed Tiede & D'Orazio 2023 since that paper does not mention retrograde.
+%SOD: SOunds good
 
 While our work has shed light on one aspect of the SMBBH--CBD system,
 it is based on simplified physics in two-dimensional hydrodynamical
@@ -805,7 +787,10 @@ self-consistently. Retrograde CBDs also warrant separate investigation:
 they produce qualitatively different orbital evolution, including
 systematic binary hardening and eccentricity excitation, and develop
 distinct inner-disk structures during the GW-driven inspiral
-\citep{Tiede_dorazio_cbd, oneill_2025}. Such calculations will be
+%ZH2: 
+%\citep{Tiede_dorazio_cbd, oneill_2025}. 
+\citep{oneill_2025}. 
+Such calculations will be
 particularly important near $q_b=1$, where the identities of the
 primary and secondary can interchange, and for determining how long
 gas-driven evolution persists during the transition to the
