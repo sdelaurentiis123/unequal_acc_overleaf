@@ -640,7 +640,7 @@ The flickering jet systems are clustered at higher $q_b$ and $e_b$. Due to large
 A handful of cells are classified as dual-jet at $\dot{M}_b = 1.1\,\dot{M}_{\rm Edd}$, chiefly the near-equal-mass $e_b = 0$ binaries, where both BHs accrete at a nearly equal, stable rate close to Eddington. As noted above, these are marginal cases sitting right at the threshold. Robust, sustained dual jets (with both BHs comfortably above threshold) are instead expected when the binary total lies either well above Eddington (both super-Eddington) or deep in the ADAF regime (both radiatively inefficient at $\dot{M} < 0.01\,\dot{M}_{\rm Edd}$, which can also drive jets), as we illustrate for two bracketing values of $\dot{M}_b$ in \autoref{fig:mini_jet_regimes}.
 
 \subsubsection{Prevalence of Flickering Jets}\label{sec:prev_flicker}
-While dual jets from BBH systems have been suggested before \citep{Palenzuela_dualjet_10,BaumgarteShapiro2011, Qian_dualjet_19} and demonstrated numerically in a range of GRMHD setups \citep{Gold_2014_jets, Gutierrez_24, Ressler_dualjet_25, Ruiz_Shapiro_23, Most_Wang_24, Ennoggi_25}, we believe that we are \textit{the first to report evidence suggesting a flickering-jet behavior}: alternating, rather than coincident, jet activity from the two BHs. We emphasize that the prior GRMHD work has typically begun from configurations in which jet conditions are already satisfied at both BHs (e.g., a magnetically arrested circumbinary flow) and asks how the resulting jets evolve through inspiral. Our framing is complementary: we ask, given a hydrodynamic accretion-rate time series, when each BH's accretion crosses the threshold required for jet activity in the first place. This flickering regime provides a uniquely distinct feedback mechanism that could be further explored in cosmological simulations.
+While dual jets from BBH systems have been suggested before \citep{Palenzuela_dualjet_10,BaumgarteShapiro2011,Qian_dualjet_19} and demonstrated numerically in a range of GRMHD setups \citep{Gold_2014_jets, Gutierrez_24, Ressler_dualjet_25, Ruiz_Shapiro_23, Most_Wang_24, Ennoggi_25}, we believe that we are the first to identify flickering jets as a distinct observational regime and systematically predict where they should occur across binary parameter space. Although our hydrodynamical simulations do not model magnetic jet launching directly, recent GRMHD simulations provide strong support for this interpretation. In particular, \citet{combi2026dualjets} find that asymmetric feeding from an eccentric circumbinary disk causes the magnetic flux and jet luminosity to alternate between the two BHs, producing an on--off dual-jet state. Their calculation directly demonstrates this behavior for a circular, equal-mass binary, while our results predict its prevalence across binary mass ratio, eccentricity, and total accretion rate.
 
 \autoref{fig:lambda_tilde_map} displays $\tilde{\lambda}$,
 \begin{equation}
@@ -744,8 +744,6 @@ where $\mathcal{M}=M_bq_b^{3/5}(1+q_b)^{-6/5}$. We identify the crossing through
 \begin{figure*}
 \centering
 \includegraphics[width=\textwidth]{Lisa Trajectories 5yr.pdf}
-%ZH: the figure panels cover up the axis labels and tickmarks on the neighboring panels
-%ZH2: still looks a bit weird on my screen - the tickmarks are there, but the right-hand side and upper boundaries of each panel (the solid outline of the box) are missing
 \caption{Illustrative evolution of binaries with initial mass $M_{b,0}=10^6\,\mathrm{M}_\odot$, mass ratio $q_{b,0}=0.8$, and eccentricity $e_{b,0}=0.8$ at $z=1$, for $\dot M_b/\dot M_{\mathrm{Edd}}=0.3$ (left) and $1$ (right). Colors denote the initial separation $a_{b,0}$. The upper-panel legends give $a_{b,0}/(10^3R_{\mathrm{S}})$, with $M_{b,\mathrm{LISA}}/M_{b,0}$ in parentheses. The upper and middle rows show $q_b(t)$ and $e_b(t)$, while the lower row shows the trajectory through $(q_b,e_b)$ space on a logarithmic eccentricity axis. Gas and gravitational-wave terms are integrated simultaneously. Open circles mark a source-frame time of $30\,\mathrm{Myr}$ when reached before LISA entry. Stars mark the first upward crossing of the $n=2$ characteristic strain and the \citet{robson2019} characteristic-noise curve. The $30\,\mathrm{Myr}$ marker is diagnostic and is not an imposed gas-supply cutoff. The results suggest that \textit{LISA} can constrain the accretion history of binaries.}
 \label{fig:lisa_qe_trajectories}
 \end{figure*}
@@ -773,11 +771,6 @@ This paper has provided the most extensive report to date on preferential accret
 
 \end{enumerate}
 
-%ZH: Cite David O'Neill's recent paper(s?) on retrograde binaries, which have different evolution...
-%SOD: DONE BELOW
-%ZH2: I removed Tiede & D'Orazio 2023 since that paper does not mention retrograde.
-%SOD: SOunds good
-
 While our work has shed light on one aspect of the SMBBH--CBD system,
 it is based on simplified physics in two-dimensional hydrodynamical
 simulations. Future work should extend this study to three-dimensional
@@ -787,8 +780,6 @@ self-consistently. Retrograde CBDs also warrant separate investigation:
 they produce qualitatively different orbital evolution, including
 systematic binary hardening and eccentricity excitation, and develop
 distinct inner-disk structures during the GW-driven inspiral
-%ZH2: 
-%\citep{Tiede_dorazio_cbd, oneill_2025}. 
 \citep{oneill_2025}. 
 Such calculations will be
 particularly important near $q_b=1$, where the identities of the
@@ -799,7 +790,9 @@ gravitational-wave-dominated regime.
 We conclude by noting that the mechanism behind preferential accretion is more complex than the near-uniform picture in which the secondary steadily out-accretes the primary along a smooth $q_b^{-0.9}$ trend \citep{farris_2014, duffell_dorazio_2020, siwek_prefacc}. Our results instead suggest that the precessing or locked, lopsided CBD regulates both the instantaneous partition of accretion and the long-term evolution of the binary mass ratio. Although binaries with $q_b<1$ generally evolve toward equal mass, this evolution becomes slow at large $q_b$ and large $e_b$. Our coupled gas and gravitational-wave integrations show that representative binaries beginning at $q_{b,0}=0.8$ can enter the LISA band with $q_{b,\mathrm{LISA}}\simeq0.80$--$0.95$ for $\dot m=0.3$ and $q_{b,\mathrm{LISA}}\simeq0.80$--$0.97$ for $\dot m=1$. Thus, the SMBBH population need not pile up exactly at $q_b=1$, and LISA mass-ratio measurements may retain information about the preceding CBD-driven phase. This suggests that \textit{LISA} may be able to place unique constraints on the gas accretion histories of SMBBHs. A complementary electromagnetic signature of the same cavity-regulated accretion may be the flickering jet regime identified above.
 
 \section*{Acknowledgements}
-The authors thank Roman Rafikov for his thoughts and feedback on the work. The authors thank the anonymous referees for helpful comments. ZH acknowledges support from NASA ATP grant 80NSSC22K0822 and LISA Preparatory Science grant 80NSSC24K0440. We acknowledge computing resources from Columbia University's Shared Research Computing Facility, in particular the Ginsburg HPC cluster.
+The authors thank Roman Rafikov for his thoughts and feedback on the work. The authors thank the anonymous referees for helpful comments. ZH acknowledges support from NASA ATP grant 80NSSC22K0822 and LISA Preparatory Science grant 80NSSC24K0440. 
+MS acknowledges support from Simons Foundation International grant SFI-MPS-SFJ-00006123. 
+We acknowledge computing resources from Columbia University's Shared Research Computing Facility, in particular the Ginsburg HPC cluster.
 
 \section*{Data Availability}
 The data underlying this article will be shared on reasonable request to the corresponding author.
